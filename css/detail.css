@@ -1,0 +1,309 @@
+/****** #header ******/
+#top{
+    width:100%;
+    height:75px;
+    background:#00A254;
+    margin-top:102px;
+}
+#top>div{
+    width:70%;
+    margin-left:15%;
+}
+#top>div h4{
+    padding-left:50px;
+    margin:0;
+    color:#fff;
+    line-height:75px;
+    background:url(../img/news_circle4.png) left center no-repeat;
+}
+#top>div p{
+    float:right;
+    color:#fff;
+    line-height:75px;
+}
+#top>div p a{
+    color:#fff;
+}
+/************中心内容**************/
+#substance{
+    width:70%;
+    margin:30px 0 0 15%;
+    min-height:200px;
+}
+/*左边列表*/
+#substance .left{
+    width:20%;
+    min-height:300px;
+}
+#substance h3{
+    width:100%;
+    height:63px;
+    margin:0;
+    text-align:center;
+    line-height:63px;
+    color:#fff;
+    background:#00A354;
+}
+#substance .left ul{
+    width:100%;
+    background:#F1F1F1;
+}
+#substance .left ul li{
+    width:100%;
+    height:63px;
+    border-bottom:1px dashed #ccc;
+    padding-top:11px;
+}
+#substance .left ul li a{
+    display:block;
+    width:85%;
+    height:41px;
+    text-align: center;
+    line-height:41px;
+    color:#444;
+    background:url(../img/news_gsquare.png) 10px center no-repeat;
+    margin-left:6%;
+}
+#substance .left ul li.active a{
+    background:#E0E0E0 url(../img/news_square.png) 10px center no-repeat;
+    border-radius:20px;
+    color:#27A45B;
+}
+/***********右边列表****************/
+#substance .right{
+    width:78%;
+    display:none;
+    float:right;
+    overflow: hidden;
+}
+#substance .right.active{
+    display:block;
+}
+#substance .right li{
+    width:100%;
+    min-height:253px;
+    padding:10px;
+    background:#F3F3F3;
+}
+#substance .media-left{
+    width:40%;
+    margin-left:5px;
+}
+#substance .media-left img{
+    width:100%;
+    height:233px;
+}
+#substance .media-body p{
+    color:#C8C7C7;
+}
+#substance .media-body p:last-child{
+    height:150px;
+    line-height:30px;
+}
+#substance .media-body p:last-child a{
+    color:#19AB64;
+}
+#substance .right hr{
+    border-top:1px dashed #D8D8D8;
+    margin:25px 0;
+}
+/*分页*/
+#substance .page{
+    margin-left:40%;
+    position:relative;
+}
+#substance .page ul{
+    position: absolute;
+    bottom:-20px;
+    left:40px;
+}
+#substance .pagination a{
+    margin-left:5px;
+    color:#808080;
+    border-radius:3px;
+}
+#substance .pagination li.active a{
+    background:#00A354;
+    color:#fff;
+}
+/*Footer*/
+#footer{
+    margin-top:40px;
+}
+
+
+/*业务范围页面的样式*/
+#substance{
+    overflow: hidden;
+}
+#substance .business{
+    width:78%;
+    float:right;
+}
+#substance .business>div{
+    width:90%;
+    margin-left:5%;
+    display:none;
+}
+#substance .business h1,h5{
+    text-align: center;
+    margin-top:20px;
+}
+#substance .business hr{
+    border-top:1px dashed #D8D8D8;
+}
+#substance .business>div img{
+    width:100%;
+}
+#substance .business>div.active{
+    display:block;
+}
+#substance i{
+    clear:both;
+}
+
+/*关于我们页面*/
+#substance .about{
+    width:76%;
+    float:right;
+}
+#substance .about>div{
+    display:none;
+}
+#substance .about>div.active{
+    display:block;
+}
+/*认识我们*/
+#substance .about .know-us img{
+    margin:10px 0 30px 12%;
+}
+#substance .about .know-us ul{
+    margin-left:24px;
+}
+#substance .about .know-us ul li{
+    line-height:26px;
+}
+/*加入我们*/
+#substance .about .join-us p{
+    margin:5px 0;
+}
+#substance .about .join-us ol{
+    padding-left:14px;
+    margin:0;
+}
+#substance .about .join-us li{
+    line-height:26px;
+}
+/*联系我们*/
+#substance .relation li{
+    line-height:28px;
+}
+/*留言板*/
+#substance .relation>span{
+    color:#8C8C8C;
+    display:block;
+    margin:10px 0 -5px 0;
+}
+#substance .relation>h4{
+    font-weight:bold;
+    color: #981f11;
+    margin:5px 0;
+}
+#substance .relation hr{
+    width:70%;
+    border-top:3px solid #6D1314;
+    margin:0;
+}
+#substance .relation form{
+    width:70%;
+    padding-top:20px;
+    border-left:2px solid #ddd;
+}
+#substance .relation form span{
+    display:inline-block;
+    width:15%;
+    text-align: right;
+}
+#substance .relation form input{
+    width:35%;
+}
+#substance .relation form button{
+    margin-left:30%;
+}
+/*留言列表*/
+#substance .Message{
+    margin-top:50px;
+    width:70%;
+    background: #F0E8E3;
+}
+#substance .Message ul{
+    margin:0 30px;
+}
+#substance .Message ul li{
+    width:100%;
+    min-height:100px;
+    border-bottom:1px solid #ddd;
+    position:relative;
+    display:block;
+    padding-top:20px;
+}
+#substance .Message li span{
+    position:absolute;
+    top:20px;
+}
+#substance .Message li i{
+    border-left:2px solid #D9D6D1;
+    height:100%;
+    position: absolute;
+    left:80px;
+}
+#substance .Message .pC{
+    width:16px;
+    height:16px;
+    border-radius:50%;
+    background:#fff;
+    position:absolute;
+    left:72px;
+    top:30px;
+}
+#substance .Message .pC>div{
+    width:10px;
+    height:10px;
+    border-radius:50%;
+    background:#FFA600;
+    position: absolute;top:3px;
+    left:3px;
+}
+#substance .Message b{
+    width:0;
+    height:0;
+    border:10px solid transparent;
+    border-right-color:#fff;
+    position: absolute;
+    left:80px;
+    top:30px;
+}
+#substance .Message li .content{
+    width:85%;
+    background:#fff;
+    border-radius:5px;
+    margin-left:100px;
+}
+#substance .Message li .content p{
+    padding:5px 15px;
+}
+#substance .Message li>p{
+    margin-left:100px;
+}
+#substance .Message li img{
+    border-radius:50%;
+}
+
+
+
+
+
+
+
+
+

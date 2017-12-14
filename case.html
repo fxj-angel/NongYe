@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/index.css"/>
+    <link rel="stylesheet" href="css/detail.css"/>
+    <title></title>
+</head>
+<body>
+<div class="container-fluid">
+    <div id="nav"></div>
+    <div id="top">
+        <div>
+            <p>您当前的位置：<a href="index.html">首页</a>&gt;<span>经典案例</span></p>
+            <h4>经典案例</h4>
+        </div>
+    </div>
+    <div id="substance">
+        <div class="rrr">
+            <div class="right right1 active" >
+                <ul class="list-unstyled">
+
+                </ul>
+            </div>
+            <div class="right right2">
+                <ul class="list-unstyled">
+
+                </ul>
+            </div>
+            <div class="right right3">
+                <ul class="list-unstyled">
+
+                </ul>
+            </div>
+            <div class="right right4">
+                <ul class="list-unstyled">
+
+                </ul>
+            </div>
+            <div class="right right5">
+                <ul class="list-unstyled">
+
+                </ul>
+            </div>
+        </div>
+        <div class="left">
+            <h3>经典案例</h3>
+            <ul class="list-unstyled">
+                <li class="active"><a href="#">北京农业嘉年华</a></li>
+                <li><a href="#">各地农业嘉年华</a></li>
+                <li><a href="#">农业会展</a></li>
+                <li><a href="#">农业规划设计</a></li>
+                <li><a href="#">园林艺术</a></li>
+            </ul>
+        </div>
+        <div class="page">
+            <span>共5页</span>
+            <ul class="pagination">
+                <li><a href="#">第一页</a></li>
+                <li>
+                    <a href="#" aria-label="Previous">
+                        <span  class="glyphicon glyphicon-triangle-left"></span>
+                        <span aria-hidden="true">上一页</span>
+                    </a>
+                </li>
+                <li class="active"><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li>
+                    <a href="#" aria-label="Next">
+                        <span aria-hidden="true">下一页</span>
+                        <span  class="glyphicon glyphicon-triangle-right"></span>
+                    </a>
+                </li>
+                <li><a href="#">最后一页</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="footer"></div>
+</div>
+
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/index.js"></script>
+<script src="js/detail.js"></script>
+<script>
+    //嘉年华页面的新闻列表
+    $(function(){
+        $.ajax({
+            type:'GET',
+            url:'data/feature_1.php',
+            success:function(data){
+                var html="";
+                for(var i=0;i<data.length;i++){
+                    var obj=data[i];
+                    html+=`
+                    <li>
+                        <div class="media">
+                            <div class="media-left">
+                                <a href="#"><img src="img/${obj.pic}"/></a>
+                            </div>
+                            <div class="media-body">
+                                <h4><b>${obj.title}</b></h4>
+                                <p>
+                                    <span class="glyphicon glyphicon-time"></span>
+                                    ${obj.time}
+                                </p>
+                                <p>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;${obj.content}
+                                    <br/>
+                                    <a href="#">[详细>>]</a>
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <hr/>
+                `;
+                }
+                $('div.right.right1>ul').html(html);
+            }
+        });
+    });
+    $(function(){
+        $.ajax({
+            type:'GET',
+            url:'data/feature_2.php',
+            success:function(data){
+                var html="";
+                for(var i=0;i<data.length;i++){
+                    var obj=data[i];
+                    html+=`
+                    <li>
+                        <div class="media">
+                            <div class="media-left">
+                                <a href="#"><img src="img/${obj.pic}"/></a>
+                            </div>
+                            <div class="media-body">
+                                <h4><b>${obj.title}</b></h4>
+                                <p>
+                                    <span class="glyphicon glyphicon-time"></span>
+                                    ${obj.time}
+                                </p>
+                                <p>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;${obj.content}
+                                    <br/>
+                                    <a href="#">[详细>>]</a>
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <hr/>
+                `;
+                }
+                $('div.right.right2>ul').html(html);
+            }
+        });
+    });
+    $(function(){
+        $.ajax({
+            type:'GET',
+            url:'data/case_3.php',
+            success:function(data){
+                var html="";
+                for(var i=0;i<data.length;i++){
+                    var obj=data[i];
+                    html+=`
+                    <li>
+                        <div class="media">
+                            <div class="media-left">
+                                <a href="#"><img src="img/${obj.pic}"/></a>
+                            </div>
+                            <div class="media-body">
+                                <h4><b>${obj.title}</b></h4>
+                                <p>
+                                    <span class="glyphicon glyphicon-time"></span>
+                                    ${obj.time}
+                                </p>
+                                <p>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;${obj.content}
+                                    <br/>
+                                    <a href="#">[详细>>]</a>
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <hr/>
+                `;
+                }
+                $('div.right.right3>ul').html(html);
+            }
+        });
+    });
+    $(function(){
+        $.ajax({
+            type:'GET',
+            url:'data/case_4.php',
+            success:function(data){
+                var html="";
+                for(var i=0;i<data.length;i++){
+                    var obj=data[i];
+                    html+=`
+                    <li>
+                        <div class="media">
+                            <div class="media-left">
+                                <a href="#"><img src="img/${obj.pic}"/></a>
+                            </div>
+                            <div class="media-body">
+                                <h4><b>${obj.title}</b></h4>
+                                <p>
+                                    <span class="glyphicon glyphicon-time"></span>
+                                    ${obj.time}
+                                </p>
+                                <p>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;${obj.content}
+                                    <br/>
+                                    <a href="#">[详细>>]</a>
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <hr/>
+                `;
+                }
+                $('div.right.right4>ul').html(html);
+            }
+        });
+    });
+    $(function(){
+        $.ajax({
+            type:'GET',
+            url:'data/case_5.php',
+            success:function(data){
+                var html="";
+                for(var i=0;i<data.length;i++){
+                    var obj=data[i];
+                    html+=`
+                    <li>
+                        <div class="media">
+                            <div class="media-left">
+                                <a href="#"><img src="img/${obj.pic}"/></a>
+                            </div>
+                            <div class="media-body">
+                                <h4><b>${obj.title}</b></h4>
+                                <p>
+                                    <span class="glyphicon glyphicon-time"></span>
+                                    ${obj.time}
+                                </p>
+                                <p>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;${obj.content}
+                                    <br/>
+                                    <a href="#">[详细>>]</a>
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <hr/>
+                `;
+                }
+                $('div.right.right5>ul').html(html);
+            }
+        });
+    });
+</script>
+</body>
+</html>
+
+
